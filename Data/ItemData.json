@@ -1,0 +1,29 @@
+{
+  "10001": {
+    "Name": "Axe",
+    "Category": "Tool",
+    "Type": "Axe",
+    "EquipmentSlot": "HandSlot",
+    "Attack": 10,
+    "FoodSatiation": null,
+    "Stackable": false
+  },
+  "10002": {
+    "Name": "Wood",
+    "Category": "Craft",
+    "Type": "Wood",
+    "EquipmentSlot": null,
+    "Attack": null,
+    "FoodSatiation": 300,
+    "Stackable": true
+  },
+  "10003": {
+    "Name": "Rock",
+    "Category": "Craft",
+    "Type": "Rock",
+    "EquipmentSlot": null,
+    "Attack": null,
+    "FoodSatiation": null,
+    "Stackable": true
+  }
+}

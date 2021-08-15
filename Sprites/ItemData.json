@@ -1,0 +1,26 @@
+{
+  "10001": {
+    "Name": "Axe",
+    "Category": "Tool",
+    "Type": "Axe",
+    "EquipmentSlot": "MainHand",
+    "Attack": 10,
+    "FoodSatiation": null
+  },
+  "10002": {
+    "Name": "Wood",
+    "Category": "Craft",
+    "Type": "Wood",
+    "EquipmentSlot": null,
+    "Attack": null,
+    "FoodSatiation": 300
+  },
+  "10003": {
+    "Name": "Rock",
+    "Category": "Craft",
+    "Type": "Rock",
+    "EquipmentSlot": null,
+    "Attack": null,
+    "FoodSatiation": null
+  }
+}

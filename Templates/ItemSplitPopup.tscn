@@ -1,0 +1,75 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Sprites/SplitSprite.png" type="Texture" id=1]
+[ext_resource path="res://Font/font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Sprites/ButtonPressedSprite.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/ButtonSprite.png" type="Texture" id=4]
+[ext_resource path="res://Templates/ItemSplitPopup.gd" type="Script" id=5]
+
+[node name="ItemSplitPopup" type="Popup"]
+margin_right = 179.0
+margin_bottom = 49.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="N" type="NinePatchRect" parent="."]
+margin_right = 235.0
+margin_bottom = 52.0
+texture = ExtResource( 1 )
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="M" type="MarginContainer" parent="N"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 5
+custom_constants/margin_top = 5
+custom_constants/margin_left = 5
+custom_constants/margin_bottom = 5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="N/M"]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 230.0
+margin_bottom = 47.0
+
+[node name="Amount" type="LineEdit" parent="N/M/HBoxContainer"]
+margin_right = 70.0
+margin_bottom = 42.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.929412, 0.941176, 0.831373, 1 )
+align = 1
+
+[node name="Confirm" type="TextureButton" parent="N/M/HBoxContainer"]
+margin_left = 74.0
+margin_right = 225.0
+margin_bottom = 42.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 3 )
+expand = true
+
+[node name="Label" type="Label" parent="N/M/HBoxContainer/Confirm"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.87451, 0.764706, 0.619608, 1 )
+text = "Ok"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="N/M/HBoxContainer/Confirm" to="." method="_on_Confirm_pressed"]
